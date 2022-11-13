@@ -1,13 +1,11 @@
 import React , {useEffect} from 'react'
 import {Switch,Route,Redirect} from 'react-router-dom';
 import Overview from '../pages/overview';
-import Login from "../Components/general/login"
-import Signup from "../Components/general/signup"
 const Routes = () => {
   const path = window.performance;
   useEffect(() =>{
     if (path) {
-      if (path.navigation.type == 1) {
+      if (path.navigation.type === 1) {
         window.location.pathname = '/home' 
       }
     }

@@ -2,21 +2,19 @@ import React from 'react'
 import Home from './home'
 import Games from './Games'
 import Community from './community'
-import Signup from '../Components/general/signup'
-import Login from '../Components/general/login'
 import Navbar from "../Components/general/navbar"
 
 import {Stack,Grid} from '@mui/material';
 const overview = () => {
     const renderer = (() => {
         const path = window.location.pathname;
-        if('/home' == path ){
+        if('/home' === path ){
             return <Home />
         }
-        if('/games' == path){
+        if('/games' === path){
             return <Games />
         }
-        if('/community' == path){
+        if('/community' === path){
             return <Community />
         }
         // if ('/signup' == path){
